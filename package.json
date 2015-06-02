@@ -1,0 +1,22 @@
+{
+  "name": "react-playground",
+  "version": "1.0.0",
+  "description": "React Playground",
+  "main": "index.js",
+  "dependencies": {
+    "babelify": "^6.1.2",
+    "react": "^0.13.3",
+    "browserify": "^10.2.3",
+    "watchify": "^3.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "watch": "watchify -t babelify ./src/app.jsx -o ./dist/bundle.js -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Github.com/Kennyomg/React-Playground.git"
+  },
+  "author": "Kennyomg",
+  "license": "ISC"
+}
