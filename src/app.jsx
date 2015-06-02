@@ -1,9 +1,9 @@
-var React = require("react");
+// index.jsx
 
-var App = React.createClass({
-    render(){
-        return <h1>hello world</h1>;
-    }
-});
+import React from 'react';
+import Player from './player.jsx';
 
-React.render(<App/>, document.getElementById('example'));
+React.render(
+    <Player />,
+    document.getElementById('example')
+);
