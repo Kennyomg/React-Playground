@@ -1,14 +1,15 @@
 // player.jsx
 
-import React from 'react';
+import Entity from './entity.jsx';
 
-class Player extends React.Component {
+
+class Player extends Entity  {
     constructor(props) {
         super(props);
         this.state = { world: "World"};
     }
-    static render() {
-        return <p>Hello, world!</p>;
+    render() {
+        return super.render();
     }
 }
 

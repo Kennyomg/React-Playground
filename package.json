@@ -9,9 +9,15 @@
     "browserify": "^10.2.3",
     "watchify": "^3.2.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "parallelshell": "^1.1.1",
+    "sassify": "^0.8.0",
+    "uglifyify": "^3.0.1"
+  },
   "scripts": {
-    "watch": "watchify -t babelify ./src/app.jsx -o ./dist/bundle.js -v"
+    "watch:css": "sass --watch ./src/style.scss:./dist/style.css",
+    "watchify:js": "watchify -t babelify -t uglifyify ./src/app.jsx -o ./dist/bundle.js -v",
+    "start": "parallelshell \"npm run watchify:js\" \"npm run watch:css\""
   },
   "repository": {
     "type": "git",

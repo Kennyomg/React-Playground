@@ -1,2 +1,3 @@
 * npm install
-* npm run watch
+* gem sass
+* npm run start

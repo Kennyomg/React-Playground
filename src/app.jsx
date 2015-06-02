@@ -1,9 +1,10 @@
 // index.jsx
 
 import React from 'react';
-import Player from './player.jsx';
+import Player from './entities/player.jsx';
+
 
 React.render(
     <Player />,
-    document.getElementById('example')
+    document.body
 );
